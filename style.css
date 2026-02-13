@@ -71,6 +71,17 @@ a {
   font-size: 14px;
   letter-spacing: 0.4em;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-logo {
+  width: 26px;
+  height: 26px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid var(--line);
 }
 
 .primary-nav {
@@ -151,6 +162,11 @@ section {
   min-height: 70vh;
 }
 
+.hero-stack {
+  display: grid;
+  gap: 18px;
+}
+
 .kicker {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 12px;
@@ -212,6 +228,29 @@ section {
   background: linear-gradient(120deg, transparent, rgba(134,242,255,0.15), transparent);
   opacity: 0.6;
   animation: sweep 5s linear infinite;
+}
+
+.hero-visual {
+  position: relative;
+  border: 1px solid var(--line);
+  min-height: 220px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.hero-visual::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(9,12,16,0.7), rgba(9,12,16,0.2));
+}
+
+.hero-visual .label {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  z-index: 1;
 }
 
 .inline-list {
@@ -314,6 +353,18 @@ section {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin-bottom: 10px;
+}
+
+.media-frame {
+  border: 1px solid var(--line);
+  padding: 12px;
+  background: rgba(10, 12, 16, 0.7);
+}
+
+.media-frame video {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
 }
 
 .signal-grid {

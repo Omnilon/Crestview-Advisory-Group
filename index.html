@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Crestview Advisory Group | Home</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
 </head>
 <body class="page-index">
   <div id="gate" class="gate">
@@ -16,7 +17,7 @@
     </div>
   </div>
   <header class="site-header">
-    <div class="brand">Crestview</div>
+    <div class="brand"><img class="brand-logo" src="assets/logo.png" alt="Crestview logo">Crestview</div>
     <nav class="primary-nav">
       <a href="index.html" data-page="index">System</a>
       <a href="about.html" data-page="about">Story</a>
@@ -44,14 +45,19 @@
       <div><span class="label">Assets Advised</span><strong>$86B</strong></div>
     </div>
   </div>
-  <div class="hero-panel">
-    <div class="label">System brief</div>
-    <ul class="inline-list">
-      <li>Risk intelligence</li>
-      <li>Capital allocation</li>
-      <li>Operational resilience</li>
-    </ul>
-    <div class="pulse"></div>
+  <div class="hero-stack">
+    <div class="hero-panel">
+      <div class="label">System brief</div>
+      <ul class="inline-list">
+        <li>Risk intelligence</li>
+        <li>Capital allocation</li>
+        <li>Operational resilience</li>
+      </ul>
+      <div class="pulse"></div>
+    </div>
+    <div class="hero-visual" style="background-image: url('assets/hero-1.png');">
+      <span class="label">Signal capture</span>
+    </div>
   </div>
 </section>
 <section>
@@ -113,6 +119,19 @@
       <h4>Measured velocity</h4>
       <p>We move fast with a deliberate cadence that protects capital and talent.</p>
     </div>
+  </div>
+</section>
+<section>
+  <div class="section-head">
+    <div>
+      <p class="kicker">Signal reel</p>
+      <h2>Live operations</h2>
+    </div>
+  </div>
+  <div class="media-frame">
+    <video autoplay muted loop playsinline poster="assets/hero-1.png">
+      <source src="assets/reel.mp4" type="video/mp4">
+    </video>
   </div>
 </section>
 <section>
