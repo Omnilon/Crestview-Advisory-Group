@@ -1,53 +1,98 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Crestview Advisory Group - Consult</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crestview Advisory Group | Consult</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<div class="page">
-
-    <aside class="aside">
-      <div class="logo">Crestview Advisory Group</div>
-      <div class="meta">Chicago, IL | (312) 555-0194<br>contact@crestviewadvisory.com</div>
-      <nav><a href="index.html">Home</a><a href="about.html">About</a><a href="mission.html">Mission</a><a href="leadership.html">Leadership</a><a href="services.html">Services</a><a href="careers.html">Careers</a><a href="contact.html">Contact</a><a href="consult.html">Consult</a></nav>
-      <div class="meta">Office hours<br>Mon to Fri, 8:30am to 6:00pm CT</div>
-      <a class="cta" href="consult.html">Schedule a strategy call</a>
-    </aside>
-    
-<main class="main">
-    <section class="section chapter">
-      <div class="chapter">
-        <div>
-          <p class="eyebrow">Consult</p>
-          <h1>Start with a focused strategy session.</h1>
-          <p>Tell us your priorities and we will propose a path forward within 72 hours.</p>
-        </div>
-        <img class="hero-image" src="https://source.unsplash.com/1600x900/?strategy,planning" alt="Consult">
-      </div>
-    </section>
-
-    <section class="section"><div class="grid-3"><div class="step"><h3>Share priorities</h3><p>Send us your goals, timelines, and stakeholders.</p></div><div class="step"><h3>Discovery call</h3><p>We confirm scope, data needs, and desired outcomes.</p></div><div class="step"><h3>Proposal</h3><p>Receive a tailored engagement plan within 72 hours.</p></div></div></section>
-
-    <section class="section"><div class="grid-3">
-      <div>
-        <h2>Consultation request</h2>
-        <form class="form">
-          <input type="text" placeholder="Full name">
-          <input type="text" placeholder="Company">
-          <input type="email" placeholder="Email">
-          <textarea placeholder="Project details"></textarea>
-          <button class="cta" type="submit">Submit request</button>
-        </form>
-      </div>
-      <div>
-        <h2>FAQ</h2>
-        <div class="faq"><h3>What is your typical engagement length?</h3><p>Most engagements run 8 to 16 weeks with an ongoing advisory option.</p></div><div class="faq"><h3>Do you work with private equity sponsors?</h3><p>Yes, we support both sponsors and operating teams across the deal lifecycle.</p></div><div class="faq"><h3>How do you measure success?</h3><p>We define metrics at kickoff and report progress monthly.</p></div>
-      </div>
-    </div></section>
-    <footer class="footer">Copyright 2026 Crestview Advisory Group.</footer></main>
-</div>
+<body class="page-consult">
+  <div id="gate" class="gate">
+    <div class="gate-inner">
+      <p class="kicker">Crestview Advisory Group</p>
+      <h1>Free from compromise</h1>
+      <button id="enter-btn" type="button">Enter system</button>
+      <p class="gate-note">Optional sound layer available after entry.</p>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="brand">Crestview</div>
+    <nav class="primary-nav">
+      <a href="index.html" data-page="index">System</a>
+      <a href="about.html" data-page="about">Story</a>
+      <a href="services.html" data-page="services">Services</a>
+      <a href="mission.html" data-page="mission">Mission</a>
+      <a href="leadership.html" data-page="leadership">Leadership</a>
+      <a href="careers.html" data-page="careers">Careers</a>
+      <a href="contact.html" data-page="contact">Contact</a>
+      <a href="consult.html" data-page="consult">Consult</a>
+    </nav>
+  </header>
+  <div class="hud">
+    <div>SYSTEM [LIVE]</div>
+    <button class="sound-toggle" type="button">SOUND ON</button>
+  </div>
+  <main>
+    <section class="hero">
+  <div>
+    <p class="kicker">Consultation</p>
+    <h1>Engagement intake.</h1>
+    <p class="lead">We design advisory sprints that fit your governance cycle and risk posture.</p>
+  </div>
+  <div class="hero-panel">
+    <div class="label">Intake format</div>
+    <ul class="inline-list">
+      <li>Discovery session</li>
+      <li>Signal audit</li>
+      <li>Engagement blueprint</li>
+    </ul>
+    <div class="pulse"></div>
+  </div>
+</section>
+<section>
+  <div class="section-head"><h2>Schedule a consult</h2></div>
+  <form class="form-grid">
+    <input type="text" placeholder="Name">
+    <input type="email" placeholder="Email">
+    <input type="text" placeholder="Role">
+    <input type="text" placeholder="Organization size">
+    <textarea placeholder="Key priorities and deadlines"></textarea>
+    <button class="primary" type="submit">Request slot</button>
+  </form>
+</section>
+  </main>
+  <div class="ticker">
+    <div class="ticker-track">CRESTVIEW SYSTEM LIVE // PORTFOLIO DEFENSE // STRATEGIC SIGNALS // CRESTVIEW SYSTEM LIVE // PORTFOLIO DEFENSE // STRATEGIC SIGNALS //</div>
+  </div>
+  <footer class="site-footer">
+    <div>
+      <div class="label">Primary Office</div>
+      590 Madison Avenue, Suite 3400<br>
+      New York, NY 10022
+    </div>
+    <div>
+      <div class="label">Contact</div>
+      inquiries@crestviewadvisory.com<br>
+      +1 (212) 555-0197
+    </div>
+    <div>
+      <div class="label">Access</div>
+      Private client portal available<br>
+      <a href="consult.html">Request credentials</a>
+    </div>
+  </footer>
+  <script>
+    const gate = document.getElementById('gate');
+    const enterBtn = document.getElementById('enter-btn');
+    const soundBtn = document.querySelector('.sound-toggle');
+    enterBtn.addEventListener('click', () => {
+      gate.classList.add('hidden');
+      document.body.classList.add('entered');
+    });
+    soundBtn.addEventListener('click', () => {
+      soundBtn.classList.toggle('off');
+      soundBtn.textContent = soundBtn.classList.contains('off') ? 'SOUND OFF' : 'SOUND ON';
+    });
+  </script>
 </body>
 </html>

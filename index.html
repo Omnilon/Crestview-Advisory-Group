@@ -1,117 +1,181 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Crestview Advisory Group - Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crestview Advisory Group | Home</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<div class="page">
-
-    <aside class="aside">
-      <div class="logo">Crestview Advisory Group</div>
-      <div class="meta">Chicago, IL | (312) 555-0194<br>contact@crestviewadvisory.com</div>
-      <nav><a href="index.html">Home</a><a href="about.html">About</a><a href="mission.html">Mission</a><a href="leadership.html">Leadership</a><a href="services.html">Services</a><a href="careers.html">Careers</a><a href="contact.html">Contact</a><a href="consult.html">Consult</a></nav>
-      <div class="meta">Office hours<br>Mon to Fri, 8:30am to 6:00pm CT</div>
-      <a class="cta" href="consult.html">Schedule a strategy call</a>
-    </aside>
-    
-<main class="main">
-    <section class="section chapter">
-      <div class="chapter">
-        <div>
-          <p class="eyebrow">Corporate Advisory</p>
-          <h1>Clarity for boardroom decisions.</h1>
-          <p>We combine analytical rigor with on-site collaboration so leadership teams can move faster without sacrificing governance.</p>
-          <div class="badge-row">
-            <span class="badge">Partner-led teams</span>
-            <span class="badge">Data-first insights</span>
-            <span class="badge">Confidential delivery</span>
-          </div>
-        </div>
-        <img class="hero-image" src="https://source.unsplash.com/1600x900/?boardroom,skyscraper" alt="Executive advisory">
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="grid-3">
-        <article class="card">
-          <h3>Strategy and Transformation</h3>
-          <p>Enterprise strategy, portfolio choices, and operating model design.</p>
-          <ul><li>Market entry analysis</li><li>Org design and workforce planning</li><li>Transformation roadmaps</li></ul>
-        </article>
-        
-        <article class="card">
-          <h3>Mergers and Integration</h3>
-          <p>M and A diligence, synergy planning, and integration governance.</p>
-          <ul><li>Commercial due diligence</li><li>Synergy tracking</li><li>Post-close integration</li></ul>
-        </article>
-        
-        <article class="card">
-          <h3>Capital Planning</h3>
-          <p>Capital structure optimization and cash flow forecasting.</p>
-          <ul><li>Cost of capital modeling</li><li>Liquidity management</li><li>Capital allocation</li></ul>
-        </article>
-        </div>
-    </section>
-
-    <section class="section">
-      <div class="grid-3"><div class="kpi"><span>120+</span><p>Engagements across mid-market and PE-backed firms</p></div><div class="kpi"><span>20+</span><p>Industry verticals with repeat clients</p></div><div class="kpi"><span>$2.4B</span><p>Value captured through transformation programs</p></div></div>
-    </section>
-
-    <section class="section">
-      <h2>Engagement snapshots</h2>
-      <div class="grid-3">
-    <article class="card">
-      <h3>Redwood Manufacturing</h3>
-      <p>Global plant network redesign and cost-to-serve analysis.</p>
-      <p><strong>Result:</strong> 14% EBITDA lift in 12 months.</p>
-    </article>
-    
-    <article class="card">
-      <h3>Harborline Health</h3>
-      <p>Integration planning for a three-acquisition roll-up.</p>
-      <p><strong>Result:</strong> Unified governance and 9-month integration.</p>
-    </article>
-    
-    <article class="card">
-      <h3>Northwind SaaS</h3>
-      <p>Capital planning ahead of Series C funding.</p>
-      <p><strong>Result:</strong> Improved cash runway by 6 months.</p>
-    </article>
+<body class="page-index">
+  <div id="gate" class="gate">
+    <div class="gate-inner">
+      <p class="kicker">Crestview Advisory Group</p>
+      <h1>Free from compromise</h1>
+      <button id="enter-btn" type="button">Enter system</button>
+      <p class="gate-note">Optional sound layer available after entry.</p>
     </div>
-    </section>
-
-    <section class="section">
-      <h2>Client perspectives</h2>
-      <div class="grid-3">
-    <figure class="quote">
-      <blockquote>Crestview brought clarity and discipline to our growth plan without slowing momentum.</blockquote>
-      <figcaption>Alicia Perez - CFO, Harborline Health</figcaption>
-    </figure>
-    
-    <figure class="quote">
-      <blockquote>Their models stood up to investor scrutiny and gave our board real confidence.</blockquote>
-      <figcaption>Victor Lane - Chair, Redwood Manufacturing</figcaption>
-    </figure>
-    
-    <figure class="quote">
-      <blockquote>They embedded with our teams and helped us make the hard calls faster.</blockquote>
-      <figcaption>Danielle Fry - CEO, Northwind SaaS</figcaption>
-    </figure>
+  </div>
+  <header class="site-header">
+    <div class="brand">Crestview</div>
+    <nav class="primary-nav">
+      <a href="index.html" data-page="index">System</a>
+      <a href="about.html" data-page="about">Story</a>
+      <a href="services.html" data-page="services">Services</a>
+      <a href="mission.html" data-page="mission">Mission</a>
+      <a href="leadership.html" data-page="leadership">Leadership</a>
+      <a href="careers.html" data-page="careers">Careers</a>
+      <a href="contact.html" data-page="contact">Contact</a>
+      <a href="consult.html" data-page="consult">Consult</a>
+    </nav>
+  </header>
+  <div class="hud">
+    <div>SYSTEM [LIVE]</div>
+    <button class="sound-toggle" type="button">SOUND ON</button>
+  </div>
+  <main>
+    <section class="hero">
+  <div>
+    <p class="kicker">Brand Book / 2026 Edition</p>
+    <h1>Free from compromise.</h1>
+    <p class="lead">Crestview Advisory Group advises institutions on resilient capital strategy, crisis posture, and transition-era growth with a signal-driven operating model.</p>
+    <div class="meta">
+      <div><span class="label">HQ</span><strong>New York</strong></div>
+      <div><span class="label">Established</span><strong>2004</strong></div>
+      <div><span class="label">Assets Advised</span><strong>$86B</strong></div>
     </div>
-    </section>
-
-    <section class="section">
-      <h2>Advisory briefs archive</h2>
-      <div class="grid-3">
-        <div class="tile"><h3>2024</h3><p>Capital allocation reset across three portfolios.</p></div>
-        <div class="tile"><h3>2023</h3><p>Margin resilience programs in manufacturing.</p></div>
-        <div class="tile"><h3>2022</h3><p>Risk and compliance modernization playbook.</p></div>
-      </div>
-    </section>
-    <footer class="footer">Copyright 2026 Crestview Advisory Group.</footer></main>
-</div>
+  </div>
+  <div class="hero-panel">
+    <div class="label">System brief</div>
+    <ul class="inline-list">
+      <li>Risk intelligence</li>
+      <li>Capital allocation</li>
+      <li>Operational resilience</li>
+    </ul>
+    <div class="pulse"></div>
+  </div>
+</section>
+<section>
+  <div class="section-head">
+    <div>
+      <p class="kicker">Choose your route</p>
+      <h2>Advisory modules</h2>
+    </div>
+    <div class="tag">Swipe right</div>
+  </div>
+  <div class="rail">
+    <article class="rail-card">
+      <div class="tag">Module 01</div>
+      <h3>Portfolio Defense</h3>
+      <p>Balance sheets and liquidity defenses built for volatility, with scenario playbooks and hedge mapping.</p>
+      <span class="label">Signal: 24H</span>
+    </article>
+    <article class="rail-card">
+      <div class="tag">Module 02</div>
+      <h3>Capital Strategy</h3>
+      <p>Allocation across private, public, and real assets with downside insulation and transition coverage.</p>
+      <span class="label">Signal: 7D</span>
+    </article>
+    <article class="rail-card">
+      <div class="tag">Module 03</div>
+      <h3>Operating Resilience</h3>
+      <p>Control tower design, vendor stress testing, and continuity architecture for regulated entities.</p>
+      <span class="label">Signal: 30D</span>
+    </article>
+    <article class="rail-card">
+      <div class="tag">Module 04</div>
+      <h3>Family Office</h3>
+      <p>Multi-generational governance, mission-aligned allocations, and reporting systems.</p>
+      <span class="label">Signal: 90D</span>
+    </article>
+  </div>
+</section>
+<section>
+  <div class="section-head">
+    <div>
+      <p class="kicker">Principles</p>
+      <h2>System guidelines</h2>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <h4>Signal over noise</h4>
+      <p>We distill market chaos into a clean operating picture with auditable indicators.</p>
+    </div>
+    <div class="card">
+      <h4>Secure by design</h4>
+      <p>Every engagement hardens the organization against downside, regulatory, and reputational shocks.</p>
+    </div>
+    <div class="card">
+      <h4>Human governance</h4>
+      <p>Boards and founders get clarity with decision choreography and accountability loops.</p>
+    </div>
+    <div class="card">
+      <h4>Measured velocity</h4>
+      <p>We move fast with a deliberate cadence that protects capital and talent.</p>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="section-head">
+    <div>
+      <p class="kicker">Live signals</p>
+      <h2>Control tower</h2>
+    </div>
+  </div>
+  <div class="signal-grid">
+    <div class="signal"><span class="label">Risk pulse</span><strong>0.82</strong></div>
+    <div class="signal"><span class="label">Liquidity band</span><strong>+14%</strong></div>
+    <div class="signal"><span class="label">Coverage ratio</span><strong>2.6x</strong></div>
+    <div class="signal"><span class="label">Stress cycles</span><strong>06</strong></div>
+  </div>
+</section>
+<section>
+  <div class="section-head">
+    <div>
+      <p class="kicker">Council</p>
+      <h2>Leadership cell</h2>
+    </div>
+  </div>
+  <div class="people">
+    <div class="person"><div class="role">CEO</div><strong>Elena Hartwell</strong><p>Former global markets lead overseeing institutional resilience programs.</p></div>
+    <div class="person"><div class="role">CFO</div><strong>Marcus Ibarra</strong><p>Capital structure strategist and former sovereign risk advisor.</p></div>
+    <div class="person"><div class="role">Head of HR</div><strong>Priya Nandakumar</strong><p>Culture architect with a focus on leadership continuity.</p></div>
+    <div class="person"><div class="role">Head of Public Relations</div><strong>Jared Pike</strong><p>Trusted advisor for stakeholder communications in high-pressure environments.</p></div>
+  </div>
+</section>
+  </main>
+  <div class="ticker">
+    <div class="ticker-track">CRESTVIEW SYSTEM LIVE // PORTFOLIO DEFENSE // STRATEGIC SIGNALS // CRESTVIEW SYSTEM LIVE // PORTFOLIO DEFENSE // STRATEGIC SIGNALS //</div>
+  </div>
+  <footer class="site-footer">
+    <div>
+      <div class="label">Primary Office</div>
+      590 Madison Avenue, Suite 3400<br>
+      New York, NY 10022
+    </div>
+    <div>
+      <div class="label">Contact</div>
+      inquiries@crestviewadvisory.com<br>
+      +1 (212) 555-0197
+    </div>
+    <div>
+      <div class="label">Access</div>
+      Private client portal available<br>
+      <a href="consult.html">Request credentials</a>
+    </div>
+  </footer>
+  <script>
+    const gate = document.getElementById('gate');
+    const enterBtn = document.getElementById('enter-btn');
+    const soundBtn = document.querySelector('.sound-toggle');
+    enterBtn.addEventListener('click', () => {
+      gate.classList.add('hidden');
+      document.body.classList.add('entered');
+    });
+    soundBtn.addEventListener('click', () => {
+      soundBtn.classList.toggle('off');
+      soundBtn.textContent = soundBtn.classList.contains('off') ? 'SOUND OFF' : 'SOUND ON';
+    });
+  </script>
 </body>
 </html>
